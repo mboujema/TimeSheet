@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useState,Component } from 'react'
+import NavBar from './navbar'
 
-export default function Login({ bouton }) {
+export default function Login({bouton,modifBouton}) {
+
+    const [change4, setChange4] = useState('disparition')
+
+    
+
+    const enlever = (e) => {
+        e.preventDefault()
+        setChange4("nav__cont")
+        modifBouton('disparition')
+    }
 
     return (
 
-        <div>
-            <section className={bouton}>
-                
+        <div >
+            <NavBar bouton2 = {change4}></NavBar>
+            <section className = {bouton}>
+
                 <div>
                     <div className="container">
-
 
                         <div className="columns is-centered">
                             <div className="column is-5-tablet is-4-desktop is-3-widescreen">
@@ -18,18 +29,14 @@ export default function Login({ bouton }) {
                                         <label for="" className="label">Nom</label>
                                         <div className="control has-icons-left">
                                             <input type="text" placeholder="..............." className="input" required />
-                                            <span className="icon is-small is-left">
-                                                <i className="fa fa-envelope"></i>
-                                            </span>
+
                                         </div>
                                     </div>
                                     <div className="field">
                                         <label for="" className="label">Prenom</label>
                                         <div className="control has-icons-left">
                                             <input type="text" placeholder="..............." className="input" required />
-                                            <span className="icon is-small is-left">
-                                                <i className="fa fa-envelope"></i>
-                                            </span>
+
                                         </div>
                                     </div>
                                     <div className="field">
@@ -44,12 +51,12 @@ export default function Login({ bouton }) {
                                     <div className="field">
                                         <label for="" className="checkbox">
                                             <input type="checkbox" className='mr-2' />
-                                                    Remember me
+                                                    Confirmer
                                     </label>
                                     </div>
                                     <div className="field">
-                                        <button className="button is-success">
-                                            Login
+                                        <button onClick = {(e) => enlever(e)} className="button is-info">
+                                            S'inscrire
                                     </button>
                                     </div>
                                 </form>
@@ -58,6 +65,7 @@ export default function Login({ bouton }) {
                     </div>
                 </div>
             </section>
+            
         </div>
 
 
