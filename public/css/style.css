@@ -1,3 +1,148 @@
+body {
+  background: #2d3436;
+  height: 100vh;
+}
 
+.container {
+  position: absolute;
+  top: 55vh;
+  left: 70vh;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 700;
+  transition: all .3s ease;
+}
 
-/*# sourceMappingURL=style.css.map */
+.container span {
+  display: block;
+}
+
+.primary {
+  font-size: 80px;
+  letter-spacing: 10px;
+  display: inline-block;
+  margin-bottom: 25px;
+  animation: ok 3s 1;
+  background: #2d3436;
+}
+
+.secondary {
+  font-size: 65px;
+  letter-spacing: 10px;
+  color: orangered;
+  position: relative;
+  z-index: -1;
+}
+
+.tertiary {
+  background: white;
+  padding: 20px 30px;
+  font-size: 20px;
+  outline: none;
+  color: white;
+  margin-top: 150px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #3e4a4e;
+}
+
+@keyframes ok {
+  0% {
+    color: #2d3436;
+    margin-bottom: -100px;
+  }
+  30% {
+    letter-spacing: 30px;
+    margin-bottom: -100px;
+  }
+  85% {
+    letter-spacing: 15px;
+    margin-bottom: -100px;
+  }
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.box h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+p {
+  font-style: 100px;
+}
+
+.register {
+  color: #03a9f4;
+}
+
+.box {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a {
+  color: #fff;
+  margin-left: 2%;
+}
+
+.container h3 {
+  font-size: 80px;
+  padding: 20px;
+}
+
+.disparition {
+  display: none;
+}
