@@ -119,7 +119,7 @@
   display: block;
   height: 20px;
   width: 44px;
-  background: red;
+  background: #282861;
   border-radius: 100px;
   cursor: pointer;
   transition: all .3s ease;
@@ -146,12 +146,11 @@
 }
 
 .cbx:checked ~ label {
-  background: white;
+  background: yellow;
 }
 
 .cbx:checked ~ label:after {
   left: 20px;
-  background: red;
 }
 
 .cntr {
