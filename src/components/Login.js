@@ -4,19 +4,20 @@ import NavBar from './navbar'
 export default function Login({bouton,modifBouton}) {
 
     const [change4, setChange4] = useState('disparition')
-
-    
+    const [change5, setChange5] = useState('disparition')
 
     const enlever = (e) => {
         e.preventDefault()
         setChange4("nav__cont")
         modifBouton('disparition')
+        setChange5('boddy')
     }
 
     return (
 
         <div >
-            <NavBar bouton2 = {change4}></NavBar>
+            <NavBar bouton2 = {change4} bouton3 = {change5} modifBouton2 = {setChange5}></NavBar>
+
             <section className = {bouton}>
 
                 <div>

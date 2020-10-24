@@ -1,5 +1,6 @@
 .logodiv {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 120px;
   display: flex;
   align-items: center;
 }
@@ -104,11 +105,11 @@
   .nav__cont .nav .nav__items a {
     position: relative;
     display: block;
-    margin-left: 40px;
+    margin-left: 25px;
     text-decoration: none;
     color: #2d3436;
     font-weight: 750;
-    font-size: 1.35em;
+    font-size: 25px;
   }
 }
 
@@ -306,6 +307,10 @@ a {
 .container h3 {
   font-size: 80px;
   padding: 20px;
+}
+
+.boddy {
+  margin-left: 90px;
 }
 
 .disparition {

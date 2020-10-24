@@ -1,11 +1,5 @@
 import React, { useRef, useState } from 'react'
 import Login from './Login'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
 
 
@@ -17,7 +11,6 @@ export default function PageAccueil() {
     const changement = () => {
         setChange('disparition')
         setChange2('hero is-fullheight')
-        
     }
 
     return (
@@ -30,7 +23,6 @@ export default function PageAccueil() {
             <Login bouton = {change2} modifBouton = {setChange2}></Login>
 
         </div>
-
 
     )
 }
