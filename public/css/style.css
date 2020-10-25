@@ -318,26 +318,16 @@ a {
   padding: 20px;
 }
 
-.boddy {
-  margin-left: 90px;
-}
-
-.Timesheettt h3 {
-  color: white;
-  font-size: 30px;
-  text-align: right;
-  margin-right: 10px;
-}
-
 .proffil {
   padding-top: 25vh;
 }
 
 #card {
-  max-width: 380px;
+  max-width: 450px;
   height: 500px;
-  background-color: white;
+  background-color: whitesmoke;
   margin: auto;
+  box-shadow: 4px 7px 5px 0px #fb3333;
   border-radius: 8px;
 }
 
@@ -443,6 +433,95 @@ a {
   color: white;
 }
 
+.fond {
+  background-image: url("../../img/desk.gif");
+  background-size: cover;
+  height: 100vh;
+}
+
+.boddy {
+  margin-left: 80px;
+}
+
+.Timesheettt h3 {
+  color: white;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+div {
+  text-align: center;
+}
+
+.info {
+  margin: 35px 400px;
+  border: red 2px solid;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.logo2 {
+  color: red;
+  text-transform: uppercase;
+  margin-left: 20px;
+  position: relative;
+  display: block;
+  font-weight: 750;
+  font-size: 1.35em;
+  text-align: center;
+  font-size: 50px;
+}
+
+.logo2 .redwork2 {
+  color: white;
+  -webkit-text-stroke-color: black;
+}
+
+.divlogo {
+  border: 1px solid red;
+  max-width: max-content;
+  margin-left: 85vh;
+  border-radius: 100px;
+  padding: 20px;
+  background-color: black;
+}
+
+.titre1 {
+  font-size: 35px;
+  color: white;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+.pext {
+  margin: 20px;
+  color: white;
+  font-size: 23px;
+}
+
+.kwd {
+  background-image: url("../../img/time2.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.test {
+  margin-top: 100px;
+  height: 119px;
+  position: relative;
+}
+
+.heure {
+  margin-top: -93px;
+  color: white;
+  z-index: 1000;
+  position: absolute;
+  margin-left: 89vh;
+  font-size: 31px;
+  font-family: 'Orbitron', sans-serif;
+}
+
 .disparition {
   display: none;
 }
@@ -457,9 +536,4 @@ a {
   background-color: white;
   height: 100vh;
   font-family: sans-serif;
-}
-
-.fkjdkfj {
-  z-index: 10000;
-  height: 1000px;
 }

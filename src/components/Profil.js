@@ -4,7 +4,7 @@ export default function Profil({ nom, prenom }) {
 
     return (
 
-        <div>
+        <div className='fond'>
             <div className='proffil'>
                 {/* Card */}
                 <div id="card">
