@@ -19,7 +19,6 @@
   font-size: 1.35em;
   text-decoration: underline black;
 }
-
 .logo .redwork {
   color: black;
   -webkit-text-stroke-color: white;
@@ -32,19 +31,16 @@
   z-index: 100;
   overflow: hidden;
   background-color: white;
-  transition: width .3s ease;
+  transition: width 0.3s ease;
   cursor: pointer;
   box-shadow: 4px 7px 5px 0px #fb3333;
 }
-
 .nav__cont:hover {
   width: 260px;
 }
-
 .nav__cont:hover img {
   height: 80px;
 }
-
 @media screen and (min-width: 600px) {
   .nav__cont {
     width: 80px;
@@ -123,10 +119,9 @@
   background: #282861;
   border-radius: 100px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   border: black 1px solid;
 }
-
 .lbl:after {
   position: absolute;
   left: -2px;
@@ -138,10 +133,9 @@
   background: white;
   border: black 1px solid;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
-  content: '';
-  transition: all .3s ease;
+  content: "";
+  transition: all 0.3s ease;
 }
-
 .lbl:active:after {
   transform: scale(1.15, 0.85);
 }
@@ -149,7 +143,6 @@
 .cbx:checked ~ label {
   background: yellow;
 }
-
 .cbx:checked ~ label:after {
   left: 20px;
 }
@@ -180,9 +173,8 @@
   color: #fff;
   font-family: sans-serif;
   font-weight: 700;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-
 .container span {
   display: block;
 }
@@ -230,7 +222,6 @@
     margin-bottom: -100px;
   }
 }
-
 .box {
   position: absolute;
   top: 35%;
@@ -243,18 +234,15 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
-
 .box h1 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: center;
 }
-
 .box .inputBox {
   position: relative;
 }
-
 .box .inputBox input {
   width: 80%;
   padding: 10px;
@@ -267,7 +255,6 @@
   outline: none;
   background: transparent;
 }
-
 .box .inputBox label {
   position: absolute;
   top: 0;
@@ -298,7 +285,6 @@ p {
   cursor: pointer;
   border-radius: 5px;
 }
-
 a {
   color: #fff;
   margin-left: 2%;
@@ -313,6 +299,75 @@ a {
   margin-left: 90px;
 }
 
+div {
+  text-align: center;
+}
+
+.info {
+  margin: 35px 400px;
+  border: red 2px solid;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.logo2 {
+  color: red;
+  text-transform: uppercase;
+  margin-left: 20px;
+  position: relative;
+  display: block;
+  font-weight: 750;
+  font-size: 1.35em;
+  text-align: center;
+  font-size: 50px;
+}
+.logo2 .redwork2 {
+  color: white;
+  -webkit-text-stroke-color: black;
+}
+
+.divlogo {
+  border: 1px solid red;
+  max-width: max-content;
+  margin: 0px 650px;
+  border-radius: 100px;
+  padding: 20px;
+  background-color: black;
+}
+
+.titre1 {
+  font-size: 35px;
+  color: white;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+.pext {
+  margin: 20px;
+  color: white;
+  font-size: 23px;
+}
+
+.kwd {
+  background-image: url("../../img/time2.jpg");
+  background-size: cover;
+}
+
+.test {
+  height: 119px;
+  position: relative;
+}
+
+.heure {
+  margin-top: -93px;
+  color: white;
+  z-index: 1000;
+  position: absolute;
+  margin-left: 667px;
+  font-size: 31px;
+  font-family: "Orbitron", sans-serif;
+}
+
 .disparition {
   display: none;
 }
@@ -322,3 +377,5 @@ body {
   height: 100vh;
   font-family: sans-serif;
 }
+
+/*# sourceMappingURL=style.css.map */
