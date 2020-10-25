@@ -69,13 +69,13 @@ export default function NavBar({ bouton2, bouton3, nom, prenom }) {
                 <div className={bouton3}>
 
                     <Switch>
+                        
+                        <Route path='/home' >
+                            <Home></Home>
+                        </Route>
 
                         <Route path='/Timesheet'>
                             <Timesheet nomm={nom} prenomm={prenom} ></Timesheet>
-                        </Route>
-
-                        <Route path='/home' >
-                            <Home></Home>
                         </Route>
 
                         <Route path='/Profil' >
