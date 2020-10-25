@@ -10,7 +10,8 @@ import Profil from './Profil';
 
 import Timesheet from './Timesheet';
 
-export default function NavBar({ bouton2 ,bouton3 }) {
+export default function NavBar({ bouton2 ,bouton3,nom ,prenom}) {
+
 
     return (
         <div >
@@ -24,13 +25,13 @@ export default function NavBar({ bouton2 ,bouton3 }) {
 
 
 
-                        <ul class="nav">
+                        <ul className="nav">
                             <li className="nav__items ">
                                 <i className="fas fa-home"></i>
                                 <Link to='/home'><a href="">Acceuil</a></Link>
                             </li>
 
-                            <li class="nav__items ">
+                            <li className="nav__items ">
                                 <i className="fas fa-user"></i>
                                 <Link to='/Profil'><a href="">Profil</a></Link>
                             </li>
@@ -59,7 +60,7 @@ export default function NavBar({ bouton2 ,bouton3 }) {
                     <Switch>
 
                         <Route path='/Timesheet'>
-                            <Timesheet></Timesheet>
+                            <Timesheet nomm = {nom} prenomm = {prenom} ></Timesheet>
                         </Route>
 
                         <Route path = '/home' >
@@ -67,7 +68,7 @@ export default function NavBar({ bouton2 ,bouton3 }) {
                         </Route>
 
                         <Route path = '/Profil' >
-                            <Profil></Profil>
+                            <Profil nom = {nom} prenom = {prenom} ></Profil>
                         </Route>
                         
                     </Switch>
