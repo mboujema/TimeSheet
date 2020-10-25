@@ -20,7 +20,7 @@ export default function Login({ bouton, modifBouton }) {
 
         setnomProfil(valueNom.current.value)
         setprenomProfil(valuePrenom.current.value)
-                
+
     }
 
     return (
@@ -75,7 +75,7 @@ export default function Login({ bouton, modifBouton }) {
                     </div>
                 </div>
             </section>
-
+            
             <NavBar nom={nomProfil} prenom={prenomProfil} bouton2={change4} bouton3={change5} modifBouton2={setChange5}></NavBar>
 
         </div>

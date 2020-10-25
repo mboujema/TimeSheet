@@ -169,6 +169,15 @@
   display: none;
 }
 
+#mode {
+  height: 50px;
+  width: 100px;
+  font-size: 25px;
+  color: black;
+  background: none;
+  outline: none;
+}
+
 .container {
   position: absolute;
   top: 55vh;
@@ -320,12 +329,137 @@ a {
   margin-right: 10px;
 }
 
+.proffil {
+  padding-top: 25vh;
+}
+
+#card {
+  max-width: 380px;
+  height: 500px;
+  background-color: white;
+  margin: auto;
+  border-radius: 8px;
+}
+
+#card .card {
+  text-align: center;
+}
+
+#card .card-picture {
+  width: 300px;
+  height: 340px;
+}
+
+#card .card-picture img {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+#card .fill-qr-code {
+  position: absolute;
+  margin: 0 auto;
+  top: 24px;
+  left: 0;
+  right: 0;
+}
+
+#card .fill-qr-code .icon {
+  position: absolute;
+  margin: 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid black;
+  color: black;
+  z-index: 10;
+}
+
+#card .fill-social-picture {
+  position: absolute;
+  margin: 0 auto;
+  top: 24px;
+  left: 0;
+  right: 0;
+  border: 1px solid black;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+#card .fill-social-picture .icon {
+  position: absolute;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 15px;
+}
+
+#card #card-name {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#card #card-name p.name {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.icon-1 {
+  top: 0px;
+  padding: 12px;
+  left: 160px;
+  right: 0;
+  font-size: 24px;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  background: #0274b3;
+  color: white;
+}
+
+.icon-2 {
+  bottom: -12px;
+  left: -120px;
+  right: 0;
+  background: #131112;
+  color: white;
+}
+
+.icon-3 {
+  bottom: -12px;
+  left: 0;
+  right: -120px;
+  background: #1ea2f1;
+  color: white;
+}
+
 .disparition {
   display: none;
 }
 
-body {
+.darkMode {
   background-color: #2d3436;
   height: 100vh;
   font-family: sans-serif;
+}
+
+.lightMode {
+  background-color: white;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.fkjdkfj {
+  z-index: 10000;
+  height: 1000px;
 }

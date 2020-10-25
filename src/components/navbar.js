@@ -10,7 +10,23 @@ import Profil from './Profil';
 
 import Timesheet from './Timesheet';
 
-export default function NavBar({ bouton2 ,bouton3,nom ,prenom}) {
+export default function NavBar({ bouton2, bouton3, nom, prenom }) {
+
+
+    const toggleDarkLight = () => {
+        const body = document.querySelector("body");
+
+        console.log(body.className);
+        
+        if (body.className == 'darkMode') {
+            body.className = "lightMode"
+            console.log(body.className);
+        } else {
+            body.className = 'darkMode'
+            console.log(body.className);
+
+        }
+      }
 
 
     return (
@@ -44,33 +60,28 @@ export default function NavBar({ bouton2 ,bouton3,nom ,prenom}) {
                             <li className="nav__items ">
                                 <i className="fas fa-moon"></i>
                                 <div className="divbtn">
-                                    <i className="fas fa-sun"></i>
-                                    <div className="row press">
-                                        <input type="checkbox" id="unchecked" className="cbx hidden" />
-                                        <label for="unchecked" className="lbl"></label>
-                                    </div>
-                                    <i className="fas fa-cloud-moon"></i>
+                                    <button id='mode' type="button" name="dark_light" onClick={toggleDarkLight} title="Toggle dark/light mode">🌞 / 🌛</button>
                                 </div>
                             </li>
                         </ul>
                     </nav>
                 </header>
-                <div className = {bouton3}>
-                    
+                <div className={bouton3}>
+
                     <Switch>
 
                         <Route path='/Timesheet'>
-                            <Timesheet nomm = {nom} prenomm = {prenom} ></Timesheet>
+                            <Timesheet nomm={nom} prenomm={prenom} ></Timesheet>
                         </Route>
 
-                        <Route path = '/home' >
+                        <Route path='/home' >
                             <Home></Home>
                         </Route>
 
-                        <Route path = '/Profil' >
-                            <Profil nom = {nom} prenom = {prenom} ></Profil>
+                        <Route path='/Profil' >
+                            <Profil nom={nom} prenom={prenom} ></Profil>
                         </Route>
-                        
+
                     </Switch>
                 </div>
             </Router>

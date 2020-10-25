@@ -4,42 +4,35 @@ export default function Profil({ nom, prenom }) {
 
     return (
 
-        <div id="card">
-            <div class="card">
-                <div class="card-picture">
-                    <div class="fill-qr-code">
-                        <a href="#">
-                            <div class="icon icon-1">
-                                <i class="fa fa-qrcode" aria-hidden="true"></i>
+        <div>
+            <div className='proffil'>
+                {/* Card */}
+                <div id="card">
+                    <div className="card">
+                        <div className="card-picture">
+                            
+                            <div className="fill-social-picture">
+                                
+                                <a href="https://github.com/oussamaghzl" target="_blank">
+                                    <div className="icon icon-2">
+                                        <i className="fa fa-github" aria-hidden="true" />
+                                    </div>
+                                </a>
+                                <a href="https://twitter.com/Le_ghezaal" target="_blank">
+                                    <div className="icon icon-3">
+                                        <i className="fa fa-twitter" aria-hidden="true" />
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <img src="./img/user.jpg" alt="img" />
+                        </div>{/* /card-picture */}
+                        <div id="card-name">
+                            <p className="name">Bienvenue, {nom} {prenom}</p>
+                            <p className="description">Je suis un Developpeur Web plutot énerve si dessus vous pouvez me retrouver et me contacter ! </p>
+                        </div>{/* /card-name */}
                     </div>
-                    <div class="fill-social-picture">
-                        <a href="#">
-                            <div class="icon icon-1">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://github.com/GrimLaurent" target="_blank">
-                            <div class="icon icon-2">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <a href="https://twitter.com/GrimLaurent" target="_blank">
-                            <div class="icon icon-3">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <img src="https://api.laminedelaurent.dev/picture/user_asian1.png" alt="img" />
-                </div>
-
-                <div id="card-name">
-                    <p class="name">Hey, je suis Lalattyna</p>
-                    <p class="description">Je suis une <strong style="color: #F50057;">Otaku</strong> et <strong style="color: #2979FF;">Développeuse Front-End</strong> qui cherche le Graal</p>
                 </div>
             </div>
         </div>
-
     )
 }
