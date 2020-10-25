@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.css'
 import PageAccueil from './components/PageAccueil';
+import Timesheet from './components/Timesheet';
 import Navbar from './components/navbar'
 
 export default class App extends React.Component {
@@ -8,7 +9,6 @@ export default class App extends React.Component {
     return (
       <div>
           <PageAccueil></PageAccueil>
-          
       </div>
     )
   }

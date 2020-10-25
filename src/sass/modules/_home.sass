@@ -1,0 +1,333 @@
+*
+    box-sizing: border-box
+
+body
+    width: 100vw
+    height: 100vh
+    margin: 0px
+
+#container
+    width: 100vw
+    height: 100vh
+    text-align: center
+
+#ring
+    width: 410px
+    height: 410px
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-top: -205px
+    margin-left: -205px
+    border: 20px solid gold
+    border-radius: 205px
+
+#face
+    width: 380px
+    height: 380px
+    background-color: white
+    border: 10px solid goldenrod
+    border-radius: 190px
+    box-shadow: 0 0 10px 2px  #888888 inset
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-top: -190px
+    margin-left: -190px
+
+#secondHand
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -40px
+    background-color: black
+    width: 200px
+    height: 1px
+    -webkit-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+    -webkit-animation: 60s secondTick steps(60) infinite
+    animation: 60s secondTick steps(60) infinite
+    -webkit-transform-origin: 20% 50%
+    transform-origin: 20% 50%
+    /*box-shadow: 2px 2px 2px gray;*/
+
+@-webkit-keyframes secondTick
+    to -webkit-transform: rotate(270deg)transform: rotate(270deg)
+
+@keyframes secondTick
+    to -webkit-transform: rotate(270deg)transform: rotate(270deg)
+
+#minuteHand
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -40px
+    background-color: black
+    width: 200px
+    height: 4px
+    -webkit-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+    -webkit-animation: 3600s minuteTick linear infinite
+    animation: 3600s minuteTick linear infinite
+    -webkit-transform-origin: 20% 50%
+    transform-origin: 20% 50%
+    /*box-shadow: 3px 4px 5px gray;*/
+
+@-webkit-keyframes minuteTick
+    to -webkit-transform: rotate(360deg)transform: rotate(360deg)
+
+@keyframes minuteTick
+    to -webkit-transform: rotate(360deg)transform: rotate(360deg)
+
+#hourHand
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -25px
+    background-color: black
+    width: 125px
+    height: 6px
+    -webkit-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+    -webkit-animation: 43200s hourTick linear infinite
+    animation: 43200s hourTick linear infinite
+    -webkit-transform-origin: 20% 50%
+    transform-origin: 20% 50%
+    /*box-shadow: 4px 4px 5px gray;*/
+
+@-webkit-keyframes hourTick
+    to -webkit-transform: rotate(270deg)transform: rotate(270deg)
+
+@keyframes hourTick
+    to -webkit-transform: rotate(270deg)transform: rotate(270deg)
+
+.smallTickMark
+    background-color: silver
+    width: 3px
+    height: 30px
+
+.tickMark
+    background-color: silver
+    width: 3px
+    height: 100px
+
+#twelve
+    margin: auto
+    position: absolute
+    top: 2%
+    left: 50%
+
+#one
+    -webkit-transform-origin: bottom
+    transform-origin: bottom
+    -webkit-transform: rotate(30deg)
+    transform: rotate(30deg)
+    position: absolute
+    top: 8%
+    right: 30%
+    /*margin: 0;*/
+
+#two
+    position: absolute
+    top: 23%
+    right: 16%
+    -webkit-transform-origin: bottom
+    transform-origin: bottom
+    -webkit-transform: rotate(60deg)
+    transform: rotate(60deg)
+    /*margin: 0;*/
+
+#three
+    position: absolute
+    top: 50%
+    right: 2%
+    -webkit-transform-origin: top
+    transform-origin: top
+    -webkit-transform: rotate(90deg)
+    transform: rotate(90deg)
+    /*margin: 0;*/
+
+#four
+    position: absolute
+    bottom: 22%
+    right: 16%
+    -webkit-transform-origin: top
+    transform-origin: top
+    -webkit-transform: rotate(-60deg)
+    transform: rotate(-60deg)
+
+#five
+    -webkit-transform-origin: top
+    transform-origin: top
+    -webkit-transform: rotate(-30deg)
+    transform: rotate(-30deg)
+    position: absolute
+    bottom: 8%
+    right: 30%
+
+#six
+    /*margin: auto;*/
+    position: absolute
+    bottom: 2%
+    left: 50%
+
+#seven
+    -webkit-transform-origin: top
+    transform-origin: top
+    -webkit-transform: rotate(30deg)
+    transform: rotate(30deg)
+    position: absolute
+    bottom: 8%
+    left: 30%
+
+#eight
+    position: absolute
+    bottom: 22%
+    left: 16%
+    -webkit-transform-origin: top
+    transform-origin: top
+    -webkit-transform: rotate(60deg)
+    transform: rotate(60deg)
+
+#nine
+    position: absolute
+    top: 50%
+    left: 2%
+    -webkit-transform-origin: top
+    transform-origin: top
+    -webkit-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+
+#ten
+    position: absolute
+    top: 23%
+    left: 16%
+    -webkit-transform-origin: bottom
+    transform-origin: bottom
+    -webkit-transform: rotate(-60deg)
+    transform: rotate(-60deg)
+
+#eleven
+    -webkit-transform-origin: bottom
+    transform-origin: bottom
+    -webkit-transform: rotate(-30deg)
+    transform: rotate(-30deg)
+    position: absolute
+    top: 8%
+    left: 30%
+
+#strap
+    width: 180px
+    height: 520px
+    background-color: blanchedalmond
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-top: -260px
+    margin-left: -90px
+    border: 3px solid saddlebrown
+    -webkit-filter: grayscale(0.4)
+    filter: grayscale(0.4)
+    z-index: -1
+
+#top-front
+    width: 114%
+    height: 19%
+    background-color: saddlebrown
+    position: absolute
+    top: -10%
+    left: -7%
+    border-radius: 20px 20px 5px 5px
+    box-shadow: 0px 5px 20px 0px #262626 inset
+
+#bottom-front
+    width: 114%
+    height: 19%
+    background-color: saddlebrown
+    position: absolute
+    bottom: -10%
+    left: -7%
+    border-radius: 5px 5px 20px 20px
+    box-shadow: 0px -5px 20px 0px #262626 inset
+
+#top-left-hinge
+    position: absolute
+    top: -15%
+    left: 19%
+
+#top-right-hinge
+    position: absolute
+    top: -15%
+    right: 19%
+
+.stitch
+    width: 2.5%
+    height: 16%
+    background-color: saddlebrown
+    -webkit-filter: brightness(0.6)
+    filter: brightness(0.6)
+    position: absolute
+    border-radius: 10px 10pc
+
+#top-stitch-1
+    top: 2%
+    left: 10%
+
+#top-stitch-2
+    top: 21%
+    left: 10%
+
+#top-stitch-3
+    top: 40%
+    left: 10%
+
+#top-stitch-4
+    top: 2%
+    right: 10%
+
+#top-stitch-5
+    top: 21%
+    right: 10%
+
+#top-stitch-6
+    top: 40%
+    right: 10%
+
+#bottom-stitch-1
+    bottom: 2%
+    left: 10%
+
+#bottom-stitch-2
+    bottom: 21%
+    left: 10%
+
+#bottom-stitch-3
+    bottom: 40%
+    left: 10%
+
+#bottom-stitch-4
+    bottom: 2%
+    right: 10%
+
+#bottom-stitch-5
+    bottom: 21%
+    right: 10%
+
+#bottom-stitch-6
+    bottom: 40%
+    right: 10%
+
+#bottom-left-hinge
+    position: absolute
+    bottom: -15%
+    left: 19%
+
+#bottom-right-hinge
+    position: absolute
+    bottom: -15%
+    right: 19%
+
+.hinge
+    width: 15px
+    height: 75px
+    background-color: gold
